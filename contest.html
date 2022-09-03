@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="get">
+        <label for="contest"></label>
+        <select id="contest" name="contest">
+            <option value="All">All</option>
+            <option value="codeforces">Codeforces</option>
+            <option value="CodeChef">CodeChef</option>
+            <option value="Hacker Rank" >Hacker Rank</option>
+            <option value="Leet code">Leet code"</option>
+            <option value="Hacker Earth">Hacker Earth</option>
+            <option value="CS academy">CS academy</option>
+            <option value="Top Coder">Top Coder</option>
+          </select>
+          <input type="submit" value="Submit">
+    </form>
+    <script>
+        console.log(contest)
+        const sub=document.getElementById("submit")
+        sub.addEventListener(onclick,()=>{
+            var e = document.getElementById("contest");
+            var value = e.value;
+            console.log(value)
+        })
+
+    </script>
+</body>
+</html>

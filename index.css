@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background:no-repeat center url("./5172658.jpg");
+    background-size: cover;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.nav {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    padding: 1vh 1vw;
+    margin-top: 2vh;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.nav li {
+    list-style: none;
+    font-size: 1.7vw;
+}
+.nav>ul>li:hover{
+   transform: translateY(10px);
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.aboutus{
+    border: 1px solid white;
+    padding: 3vh 10px;
+    margin-left: 2vw;
+    padding-bottom: 14vh;
+    text-align: center;
+    width: 50%;
+    margin-top: 21vh;
+    background-color: rgb(255, 255, 255,0.2);
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.aboutus  h2{
+    margin-top: 7vh;
+    font-size: 18px;
+}
+
+.aboutus::after{
+    content: "";
+    background: no-repeat center url(https://img.freepik.com/premium-vector/megaphone-with-contest-speech-bubble-banner-loudspeaker-can-be-used-business-marketing-advertising-vector-eps-10-isolated-white-background_399089-1602.jpg?w=2000);
+    background-size: cover;
+    background-position: 30% 75%;
+    width: 43%;
+    height: 38%;
+    position: absolute;
+    right: 15px;
+    transform: translateY(-17.8vh);
+    border-radius: 20px;
+}
+
+.aboutus a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn{
+    font-size: 3vh ;
+    padding: 5px 5px;
+    color: white;
+    background-color: transparent;
+    outline: 1px;
+    border-color: white;
+    width: 10vw;
+    position: relative;
+    top: 10vh;
+    border-radius: 10px;
+    box-shadow: -2px -2px rgba(255, 255, 255,0.6);
+}
+
+.btn:hover{
+    box-shadow: 3px 3px rgba(255, 255, 255,0.6);
+}
+
+.signup{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    margin-top: 5vh;
+    border: 1px solid white;
+    background-color:rgb(255, 255, 255,0.2) ;
+    border-radius: 20px;
+    padding: 3vh 5vw;
+    
+}
+
+.btn1{
+    width: 16vw;
+    padding: 1vw 2vh;
+    font-size: 1.5vw;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    margin-top: 4vh;
+}
