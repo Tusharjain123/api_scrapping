@@ -11,8 +11,9 @@ app.get("/", function(req,res){
 app.get("/contest", function(req,res){
     res.sendFile(__dirname+"/contest.html")
 })
+
 app.get("/subscription", function(req,res){
-    res.send("https://contest-alert01.herokuapp.com/")
+    res.redirect("https://contest-alert01.herokuapp.com/")
 })
 
 
