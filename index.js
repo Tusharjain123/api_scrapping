@@ -1,10 +1,23 @@
-const axios =require('axios')
-const contestData=async ()=>{
-    const contest_data = await axios.get("https://www.kontests.net/api/v1/codeforces");
-    (contest_data.data).forEach(element => {
-        console.log(element.name)
-        console.log(element.url)
-        
-    })
-}
-contestData()
+const express=require("express")
+const app = express()
+app.use(express.static("public"));
+
+
+app.get("/", function(req,res){
+    res.sendFile(__dirname+"/index.html")
+})
+
+
+app.get("/contest", function(req,res){
+    res.sendFile(__dirname+"/contest.html")
+})
+app.get("/subscription", function(req,res){
+    res.send("https://contest-alert01.herokuapp.com/")
+})
+
+
+
+
+app.listen(process.env.PORT || 80 , function(){
+    console.log("Server is started")
+})
