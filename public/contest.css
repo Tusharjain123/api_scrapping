@@ -11,7 +11,7 @@ body {
 }
 
 .bar {
-    width: fit-content;
+    width: 38vw;
     height: fit-content;
     border: 1px solid white;
     margin: auto;
