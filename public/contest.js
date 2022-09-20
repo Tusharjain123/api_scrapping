@@ -3,7 +3,6 @@ const contestData = async (value) => {
     const contest_data = await fetch("https://www.kontests.net/api/v1/" + value);
     const data = await contest_data.json();
     data.forEach(element => {
-        console.log((element.start_time).slice(15, 17))
         let name = element.name
         let url = element.url
         let date = `${(element.start_time).slice(0, 10)} to  ${(element.end_time).slice(0, 10)}`
@@ -27,7 +26,6 @@ const contestData = async (value) => {
         let duration = `${Number(element.duration) / 3600} hr: ${Number(element.duration) % 60} min`
         contestDetail.innerHTML += "<div class='segment'><div class='data'><div class='name'> <span>Contest Name: </span>" + name + "</div><div class='url'>Contest Link: <a href='"+ url +" ' target='_blank'>" +"<i>Link for the contest</i>"+"</a>"+"</div><div class='date'>Date: " + date + "</div><div class='time'>Time: " + time + "</div><div class='duration'>Duration: " + duration + "</div></div>"
     })
-    console.log(data);
 }
 const sub = document.querySelector("#submit")
 sub.addEventListener("click", () => {

@@ -11,7 +11,7 @@ body {
 }
 
 .bar {
-    width: 38vw;
+    width: fit-content;
     height: fit-content;
     border: 1px solid white;
     margin: auto;
@@ -41,7 +41,7 @@ select {
 }
 
 #submit {
-    width: 7vw;
+    width: 8vw;
     padding: 0.7vh 1vh;
     background-color: transparent;
     border-color: white;
@@ -57,7 +57,7 @@ select {
     justify-content: space-around;
 }
 .contestDetails>.segment>.data {
-    width: fit-content;
+    width: 38vw;
     height: fit-content;
     padding: 1vh 1vw;
     background-color: rgb(255, 255, 255, 0.2) ;
